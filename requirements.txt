@@ -1,7 +1,6 @@
 backports.ssl-match-hostname==3.5.0.1
 backports.weakref==1.0rc1
 bintrees==2.0.7
-bitmex-market-maker==0.3
 bleach==1.5.0
 certifi==2017.4.17
 chardet==3.0.4
@@ -17,7 +16,7 @@ idna==2.5
 itsdangerous==0.24
 Jinja2==2.9.4
 Keras==2.0.6
-Markdown==2.6.8
+Markdown==2.6.8`
 MarkupSafe==0.23
 mock==2.0.0
 numpy==1.13.1

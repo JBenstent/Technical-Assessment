@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <meta charset="utf-8">
     {% load static %}
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>AT&T Technical Assessment</title>
-
-
     <style media="screen">
-      #HomepageTable {
+
+      #tablejavascript  {
+        width: auto;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+
+      #tablejavascript td {
+        text-align: right;
+      }
+
+
+
+      #homepagetable {
         border-collapse: collapse;
         width: 100%;
       }
 
-      #HomepageTable th, td {
+      #homepagetable th, td {
         padding: 8px;
         text-align: left;
         border-bottom: 1px solid #ddd;
       }
 
-      #HomepageTable tr:hover {
+      #homepagetable tr:hover {
         background-color: #3297ac;
       }
 
@@ -50,24 +60,68 @@
 
        .active {
 	      font-weight: 600;
-      }
-    </style>
+      }</style>
     <script type="text/javascript">
     $(document).ready(function() {
       $("#tableview").on("click", "#clicktable", function() {
        $(this).toggleClass("active").next().slideToggle();
       });
     });
+    var table_data = [ { first_name : 'Rose',
+                     last_name  : 'Tyler',
+                     home       : 'Earth' },
+                   { first_name : 'Zoe',
+                     last_name  : 'Heriot',
+                     home       : 'Space Station W3'},
+                   { first_name : 'Jo',
+                     last_name  : 'Grant',
+                     home       : 'Earth'},
+                   { first_name : 'Leela',
+                     last_name  : null,
+                     home       : 'Unspecified'},
+                   { first_name : 'Romana',
+                     last_name  : null,
+                     home       : 'Gallifrey'},
+                   { first_name : 'Clara',
+                     last_name  : 'Oswald',
+                     home       : 'Earth'},
+                   { first_name : 'Adric',
+                     last_name  : null,
+                     home       : 'Alzarius'},
+                   { first_name : 'Susan',
+                     last_name  : 'Foreman',
+                     home       : 'Gallifrey'} ];
     </script>
   </head>
   <body>
-
     <h1 style="text-align: center">Developer: Jonathan Benstent</h1>
-
     <h3>Question 1</h3>
     <hr>
 
-    <table id="HomepageTable">
+    <h4>Table Displayed With JavaScript:</h4>
+
+    <div id=tablejavascript>
+      <table>
+        <tr>
+          <th> First Name </th>
+          <th> Last Name </th>
+          <th> Home </th>
+        </tr>
+      <script>
+      for (var i in table_data) {
+        document.write(
+            "<tr>" +
+              "<td>" + table_data[i].first_name +"</td>" +
+              "<td>" + table_data[i].last_name +"</td>" +
+              "<td>" + table_data[i].home +"</td>" +
+            "</tr>"
+      )}
+      </script>
+    </table>
+    </div>
+
+
+    <table id="homepagetable">
       <tr>
         <th>First Name</th>
         <th>Last Name</th>
@@ -92,7 +146,6 @@
         {% else %}
         <td>{{i.home}}</td>
         {% endif %}
-
       </tr>
       {% endfor %}
     </table>
@@ -128,7 +181,6 @@
             {% else %}
             <td>{{i.home}}</td>
             {% endif %}
-
           </tr>
           {% endfor %}
         </table>
@@ -179,8 +231,5 @@
       <dt>print "\n"; \</dt>
       <dt>}</dt>
     </dl>
-
-
-
   </body>
 </html>
