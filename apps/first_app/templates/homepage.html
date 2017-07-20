@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>AT&T Technical Assessment</title>
+
+
+    <style media="screen">
+      #HomepageTable {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #HomepageTable th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      #HomepageTable tr:hover {
+        background-color: #3297ac;
+      }
+
+       #tablecontent {
+	      display: none;
+      }
+
+      #tablestyle2 {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #tablestyle2 th, td {
+        text-align: left;
+        padding: 8px;
+      }
+
+      #tablestyle2 tr:nth-child(even){
+        background-color: #f2f2f2;
+      }
+
+      #tablestyle2 th {
+        background-color: #FF0000;
+        color: white;
+      }
+
+       .active {
+	      font-weight: 600;
+      }
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $("#tableview").on("click", "#clicktable", function() {
+       $(this).toggleClass("active").next().slideToggle();
+      });
+    });
+    </script>
+  </head>
+  <body>
+
+    <h1 style="text-align: center">Developer: Jonathan Benstent</h1>
+
+    <h3>Question 1</h3>
+    <hr>
+
+    <table id="HomepageTable">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Home</th>
+      </tr>
+      {% for i in table_data %}
+      <tr>
+        {% if i.first_name == null %}
+        <td>null</td>
+        {% else %}
+        <td>{{i.first_name}}</td>
+        {% endif %}
+
+        {% if i.last_name == null %}
+        <tr>null</tr>
+        {% else %}
+        <td>{{i.last_name}}</td>
+        {% endif %}
+
+        {% if i.home == null or i.home == "Unspecified" %}
+        <td>null</td>
+        {% else %}
+        <td>{{i.home}}</td>
+        {% endif %}
+
+      </tr>
+      {% endfor %}
+    </table>
+    <br>
+
+
+    <div id="tableview">
+    	<div id="clicktable" style="text-align: center">Toggle here for a new table view!</div>
+    	<div id="tablecontent">
+
+        <table id="tablestyle2">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Home</th>
+          </tr>
+          {% for i in table_data %}
+          <tr>
+            {% if i.first_name == null %}
+            <td>null</td>
+            {% else %}
+            <td>{{i.first_name}}</td>
+            {% endif %}
+
+            {% if i.last_name == null %}
+            <tr>null</tr>
+            {% else %}
+            <td>{{i.last_name}}</td>
+            {% endif %}
+
+            {% if i.home == null or i.home == "Unspecified" %}
+            <td>null</td>
+            {% else %}
+            <td>{{i.home}}</td>
+            {% endif %}
+
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+
+    <h3>Question 2</h3>
+    <h4>Script to create a table and retrieve information from SQLite using Perl</h4>
+    <hr>
+
+    <dl>
+      <dt>perl  -MCPAN –e shell</dt>
+      <br>
+      <dt>install DBI;</dt>
+        <dd>installs database plug-in</dd>
+        <br>
+      <dt>install DBD::SQLite </dt>
+        <dd>installs database driver</dd>
+        <br>
+      <dt>perl –d –e 1 </dt>
+        <dd>starts perl in interactive mode</dd>
+        <br>
+      <dt>use DBI; </dt>
+        <dd>Tells interactive program to pull in Database interface library</dd>
+        <br>
+      <dt>$dbh = DBI->connect("dbi:SQLite:perlsqlite.db") || die "Cannot connect"</dt>
+        <dd>creates database handle</dd>
+        <br>
+      <dt>$dbh->do("create table assessment (id integer, first_name text, last_name text, hometown text)");</dt>
+        <dd>Creates table called assessment with column header rows First Name, Last Name and hometown</dd>
+        <br>
+      <dt>$dbh->do("insert into assessment values(1, 'Jonathan', 'Benstent', 'Chicago')");</dt>
+        <dd>Inserts values into the table assessment</dd>
+        <br>
+      <dt>$res = $dbh->selectall_arrayref(q(select * from assessment));</dt>
+        <dd>Outputs array to parse through information</dd>
+        <br>
+      <dt>foreach (@$res) { \</dt>
+        <dd>Identifies each array in the array of arrays</dd>
+        <br>
+      <dt>foreach $i (0..$#$_) { \</dt>
+        <dd>Identifies elements in each row</dd>
+        <br>
+      <dt>print "$_->[$i] "; \</dt>
+        <dd>Print each element in the row</dd>
+        <br>
+      <dt>}  \</dt>
+      <dt>print "\n"; \</dt>
+      <dt>}</dt>
+    </dl>
+
+
+
+  </body>
+</html>

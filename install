@@ -1,0 +1,689 @@
+Fetching with LWP:
+http://mirror.team-cymru.org/CPAN/authors/01mailrc.txt.gz
+Reading '/Users/JonathanBenstent/.cpan/sources/authors/01mailrc.txt.gz'
+............................................................................DONE
+Fetching with LWP:
+http://mirror.team-cymru.org/CPAN/modules/02packages.details.txt.gz
+Reading '/Users/JonathanBenstent/.cpan/sources/modules/02packages.details.txt.gz'
+  Database was generated on Wed, 19 Jul 2017 17:53:57 GMT
+.............
+  New CPAN.pm version (v2.16) available.
+  [Currently running version is v2.00]
+  You might want to try
+    install CPAN
+    reload cpan
+  to both upgrade CPAN.pm and run the new version without leaving
+  the current session.
+
+
+...............................................................DONE
+Fetching with LWP:
+http://mirror.team-cymru.org/CPAN/modules/03modlist.data.gz
+Reading '/Users/JonathanBenstent/.cpan/sources/modules/03modlist.data.gz'
+DONE
+Writing /Users/JonathanBenstent/.cpan/Metadata
+Running install for module 'DBI'
+Running make for T/TI/TIMB/DBI-1.636.tar.gz
+Fetching with LWP:
+http://mirror.team-cymru.org/CPAN/authors/id/T/TI/TIMB/DBI-1.636.tar.gz
+Fetching with LWP:
+http://mirror.team-cymru.org/CPAN/authors/id/T/TI/TIMB/CHECKSUMS
+Checksum for /Users/JonathanBenstent/.cpan/sources/authors/id/T/TI/TIMB/DBI-1.636.tar.gz ok
+
+  CPAN.pm: Building T/TI/TIMB/DBI-1.636.tar.gz
+
+
+*** Your LANG environment variable is set to 'en_US.UTF-8'
+*** This may cause problems for some perl installations.
+*** If you get test failures, please try again with LANG unset.
+*** If that then works, please email dbi-dev@perl.org with details
+*** including the output of 'perl -V'
+
+Your perl was compiled with gcc (version 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.34)), okay.
+Creating test wrappers for DBD::Gofer:
+t/zvg_01basics.t 
+t/zvg_02dbidrv.t 
+t/zvg_03handle.t 
+t/zvg_04mods.t 
+t/zvg_05concathash.t 
+t/zvg_06attrs.t 
+t/zvg_07kids.t 
+t/zvg_08keeperr.t 
+t/zvg_09trace.t 
+t/zvg_10examp.t 
+t/zvg_11fetch.t 
+t/zvg_12quote.t 
+t/zvg_13taint.t 
+t/zvg_14utf8.t 
+t/zvg_15array.t 
+t/zvg_16destroy.t 
+t/zvg_19fhtrace.t 
+t/zvg_20meta.t 
+t/zvg_30subclass.t 
+t/zvg_31methcache.t 
+t/zvg_35thrclone.t (use threads)
+t/zvg_40profile.t 
+t/zvg_41prof_dump.t 
+t/zvg_42prof_data.t 
+t/zvg_43prof_env.t 
+t/zvg_48dbi_dbd_sqlengine.t 
+t/zvg_49dbd_file.t 
+t/zvg_50dbm_simple.t 
+t/zvg_51dbm_file.t 
+t/zvg_52dbm_complex.t 
+t/zvg_53sqlengine_adv.t 
+t/zvg_60preparse.t 
+t/zvg_65transact.t 
+t/zvg_70callbacks.t 
+t/zvg_72childhandles.t 
+t/zvg_73cachedkids.t 
+t/zvg_80proxy.t 
+t/zvg_85gofer.t 
+t/zvg_86gofer_fail.t 
+t/zvg_87gofer_cache.t 
+t/zvg_90sql_type_cast.t 
+t/zvg_91_store_warning.t 
+Creating test wrappers for DBI::SQL::Nano:
+t/zvn_48dbi_dbd_sqlengine.t 
+t/zvn_49dbd_file.t 
+t/zvn_50dbm_simple.t 
+t/zvn_51dbm_file.t 
+t/zvn_52dbm_complex.t 
+t/zvn_85gofer.t 
+Creating test wrappers for DBI::PurePerl:
+t/zvp_01basics.t 
+t/zvp_02dbidrv.t 
+t/zvp_03handle.t 
+t/zvp_04mods.t 
+t/zvp_05concathash.t 
+t/zvp_06attrs.t 
+t/zvp_07kids.t 
+t/zvp_08keeperr.t 
+t/zvp_09trace.t 
+t/zvp_10examp.t 
+t/zvp_11fetch.t 
+t/zvp_12quote.t 
+t/zvp_13taint.t 
+t/zvp_14utf8.t 
+t/zvp_15array.t 
+t/zvp_16destroy.t 
+t/zvp_19fhtrace.t 
+t/zvp_20meta.t 
+t/zvp_30subclass.t 
+t/zvp_31methcache.t 
+t/zvp_35thrclone.t (use threads)
+t/zvp_40profile.t 
+t/zvp_41prof_dump.t 
+t/zvp_42prof_data.t 
+t/zvp_43prof_env.t 
+t/zvp_48dbi_dbd_sqlengine.t 
+t/zvp_49dbd_file.t 
+t/zvp_50dbm_simple.t 
+t/zvp_51dbm_file.t 
+t/zvp_52dbm_complex.t 
+t/zvp_53sqlengine_adv.t 
+t/zvp_60preparse.t 
+t/zvp_65transact.t 
+t/zvp_70callbacks.t 
+t/zvp_72childhandles.t 
+t/zvp_73cachedkids.t 
+t/zvp_80proxy.t 
+t/zvp_85gofer.t 
+t/zvp_86gofer_fail.t 
+t/zvp_87gofer_cache.t 
+t/zvp_90sql_type_cast.t 
+t/zvp_91_store_warning.t 
+Creating test wrappers for DBD::Gofer + DBI::SQL::Nano:
+t/zvxgn_48dbi_dbd_sqlengine.t 
+t/zvxgn_49dbd_file.t 
+t/zvxgn_50dbm_simple.t 
+t/zvxgn_51dbm_file.t 
+t/zvxgn_52dbm_complex.t 
+t/zvxgn_85gofer.t 
+Creating test wrappers for DBD::Gofer + DBI::PurePerl:
+t/zvxgp_01basics.t 
+t/zvxgp_02dbidrv.t 
+t/zvxgp_03handle.t 
+t/zvxgp_04mods.t 
+t/zvxgp_05concathash.t 
+t/zvxgp_06attrs.t 
+t/zvxgp_07kids.t 
+t/zvxgp_08keeperr.t 
+t/zvxgp_09trace.t 
+t/zvxgp_10examp.t 
+t/zvxgp_11fetch.t 
+t/zvxgp_12quote.t 
+t/zvxgp_13taint.t 
+t/zvxgp_14utf8.t 
+t/zvxgp_15array.t 
+t/zvxgp_16destroy.t 
+t/zvxgp_19fhtrace.t 
+t/zvxgp_20meta.t 
+t/zvxgp_30subclass.t 
+t/zvxgp_31methcache.t 
+t/zvxgp_35thrclone.t (use threads)
+t/zvxgp_40profile.t 
+t/zvxgp_41prof_dump.t 
+t/zvxgp_42prof_data.t 
+t/zvxgp_43prof_env.t 
+t/zvxgp_48dbi_dbd_sqlengine.t 
+t/zvxgp_49dbd_file.t 
+t/zvxgp_50dbm_simple.t 
+t/zvxgp_51dbm_file.t 
+t/zvxgp_52dbm_complex.t 
+t/zvxgp_53sqlengine_adv.t 
+t/zvxgp_60preparse.t 
+t/zvxgp_65transact.t 
+t/zvxgp_70callbacks.t 
+t/zvxgp_72childhandles.t 
+t/zvxgp_73cachedkids.t 
+t/zvxgp_80proxy.t 
+t/zvxgp_85gofer.t 
+t/zvxgp_86gofer_fail.t 
+t/zvxgp_87gofer_cache.t 
+t/zvxgp_90sql_type_cast.t 
+t/zvxgp_91_store_warning.t 
+Creating test wrappers for DBI::SQL::Nano + DBI::PurePerl:
+t/zvxnp_48dbi_dbd_sqlengine.t 
+t/zvxnp_49dbd_file.t 
+t/zvxnp_50dbm_simple.t 
+t/zvxnp_51dbm_file.t 
+t/zvxnp_52dbm_complex.t 
+t/zvxnp_85gofer.t 
+Creating test wrappers for DBD::Gofer + DBI::SQL::Nano + DBI::PurePerl:
+t/zvxgnp_48dbi_dbd_sqlengine.t 
+t/zvxgnp_49dbd_file.t 
+t/zvxgnp_50dbm_simple.t 
+t/zvxgnp_51dbm_file.t 
+t/zvxgnp_52dbm_complex.t 
+t/zvxgnp_85gofer.t 
+Checking if your kit is complete...
+Looks good
+Writing Makefile for DBI
+Writing MYMETA.yml and MYMETA.json
+/usr/bin/perl -MExtUtils::Command -e 'mkpath' -- blib/lib/DBI
+rm -f blib/lib/DBI/Changes.pm
+cp Changes blib/lib/DBI/Changes.pm
+cp lib/DBI/ProfileDumper/Apache.pm blib/lib/DBI/ProfileDumper/Apache.pm
+cp dbd_xsh.h blib/arch/auto/DBI/dbd_xsh.h
+cp dbivport.h blib/arch/auto/DBI/dbivport.h
+cp lib/DBI/ProfileDumper.pm blib/lib/DBI/ProfileDumper.pm
+cp lib/DBD/File/HowTo.pod blib/lib/DBD/File/HowTo.pod
+cp lib/DBI/Const/GetInfo/ANSI.pm blib/lib/DBI/Const/GetInfo/ANSI.pm
+cp lib/DBD/Gofer/Transport/stream.pm blib/lib/DBD/Gofer/Transport/stream.pm
+cp lib/DBD/DBM.pm blib/lib/DBD/DBM.pm
+cp DBIXS.h blib/arch/auto/DBI/DBIXS.h
+cp lib/DBD/Gofer/Transport/Base.pm blib/lib/DBD/Gofer/Transport/Base.pm
+cp dbixs_rev.pl blib/lib/dbixs_rev.pl
+cp lib/DBI/ProfileSubs.pm blib/lib/DBI/ProfileSubs.pm
+cp lib/DBD/Gofer/Policy/classic.pm blib/lib/DBD/Gofer/Policy/classic.pm
+cp lib/DBI/Gofer/Response.pm blib/lib/DBI/Gofer/Response.pm
+cp lib/DBD/File.pm blib/lib/DBD/File.pm
+cp lib/DBI/Util/CacheMemory.pm blib/lib/DBI/Util/CacheMemory.pm
+cp Driver_xst.h blib/arch/auto/DBI/Driver_xst.h
+cp lib/DBI/Gofer/Transport/Base.pm blib/lib/DBI/Gofer/Transport/Base.pm
+cp lib/DBI/W32ODBC.pm blib/lib/DBI/W32ODBC.pm
+cp dbi_sql.h blib/arch/auto/DBI/dbi_sql.h
+cp lib/DBD/Gofer.pm blib/lib/DBD/Gofer.pm
+cp lib/DBI/ProfileData.pm blib/lib/DBI/ProfileData.pm
+cp lib/DBD/ExampleP.pm blib/lib/DBD/ExampleP.pm
+cp lib/DBI/Gofer/Serializer/Base.pm blib/lib/DBI/Gofer/Serializer/Base.pm
+cp lib/DBD/Gofer/Policy/pedantic.pm blib/lib/DBD/Gofer/Policy/pedantic.pm
+cp lib/DBI/Gofer/Transport/stream.pm blib/lib/DBI/Gofer/Transport/stream.pm
+cp lib/DBI/Const/GetInfoReturn.pm blib/lib/DBI/Const/GetInfoReturn.pm
+cp lib/DBD/Gofer/Transport/null.pm blib/lib/DBD/Gofer/Transport/null.pm
+cp lib/DBI/Profile.pm blib/lib/DBI/Profile.pm
+cp dbipport.h blib/arch/auto/DBI/dbipport.h
+cp lib/DBI/Gofer/Execute.pm blib/lib/DBI/Gofer/Execute.pm
+cp lib/DBI/Gofer/Request.pm blib/lib/DBI/Gofer/Request.pm
+cp lib/DBI/Const/GetInfo/ODBC.pm blib/lib/DBI/Const/GetInfo/ODBC.pm
+cp lib/DBD/File/Developers.pod blib/lib/DBD/File/Developers.pod
+cp lib/DBD/File/Roadmap.pod blib/lib/DBD/File/Roadmap.pod
+cp dbixs_rev.h blib/arch/auto/DBI/dbixs_rev.h
+cp lib/DBI/DBD.pm blib/lib/DBI/DBD.pm
+cp lib/DBI/DBD/SqlEngine/Developers.pod blib/lib/DBI/DBD/SqlEngine/Developers.pod
+cp lib/DBI/SQL/Nano.pm blib/lib/DBI/SQL/Nano.pm
+cp Driver.xst blib/arch/auto/DBI/Driver.xst
+cp DBI.pm blib/lib/DBI.pm
+cp lib/DBD/Gofer/Policy/rush.pm blib/lib/DBD/Gofer/Policy/rush.pm
+cp lib/DBD/Proxy.pm blib/lib/DBD/Proxy.pm
+cp lib/DBI/DBD/Metadata.pm blib/lib/DBI/DBD/Metadata.pm
+cp lib/DBI/DBD/SqlEngine.pm blib/lib/DBI/DBD/SqlEngine.pm
+cp lib/DBI/ProxyServer.pm blib/lib/DBI/ProxyServer.pm
+cp lib/Bundle/DBI.pm blib/lib/Bundle/DBI.pm
+cp lib/Win32/DBIODBC.pm blib/lib/Win32/DBIODBC.pm
+cp lib/DBI/Gofer/Serializer/Storable.pm blib/lib/DBI/Gofer/Serializer/Storable.pm
+cp lib/DBD/Sponge.pm blib/lib/DBD/Sponge.pm
+cp lib/DBI/Util/_accessor.pm blib/lib/DBI/Util/_accessor.pm
+cp lib/DBD/Gofer/Policy/Base.pm blib/lib/DBD/Gofer/Policy/Base.pm
+cp lib/DBD/Gofer/Transport/corostream.pm blib/lib/DBD/Gofer/Transport/corostream.pm
+cp lib/DBI/Gofer/Serializer/DataDumper.pm blib/lib/DBI/Gofer/Serializer/DataDumper.pm
+cp lib/DBI/DBD/SqlEngine/HowTo.pod blib/lib/DBI/DBD/SqlEngine/HowTo.pod
+cp lib/DBI/Gofer/Transport/pipeone.pm blib/lib/DBI/Gofer/Transport/pipeone.pm
+cp lib/DBD/Gofer/Transport/pipeone.pm blib/lib/DBD/Gofer/Transport/pipeone.pm
+cp lib/DBI/PurePerl.pm blib/lib/DBI/PurePerl.pm
+cp lib/DBD/NullP.pm blib/lib/DBD/NullP.pm
+cp lib/DBI/Const/GetInfoType.pm blib/lib/DBI/Const/GetInfoType.pm
+/usr/bin/perl -p -e "s/~DRIVER~/Perl/g" ./Driver.xst > Perl.xsi
+/usr/bin/perl /System/Library/Perl/5.18/ExtUtils/xsubpp  -typemap /System/Library/Perl/5.18/ExtUtils/typemap -typemap typemap  Perl.xs > Perl.xsc && mv Perl.xsc Perl.c
+cc -c   -arch x86_64 -arch i386 -g -pipe -fno-common -DPERL_DARWIN -fno-strict-aliasing -fstack-protector -Os   -DVERSION=\"1.636\" -DXS_VERSION=\"1.636\"  "-I/System/Library/Perl/5.18/darwin-thread-multi-2level/CORE"  -W -Wall -Wpointer-arith -Wbad-function-cast -Wno-comment -Wno-sign-compare -Wno-cast-qual -Wmissing-noreturn -Wno-unused-parameter Perl.c
+/usr/bin/perl /System/Library/Perl/5.18/ExtUtils/xsubpp  -typemap /System/Library/Perl/5.18/ExtUtils/typemap -typemap typemap  DBI.xs > DBI.xsc && mv DBI.xsc DBI.c
+cc -c   -arch x86_64 -arch i386 -g -pipe -fno-common -DPERL_DARWIN -fno-strict-aliasing -fstack-protector -Os   -DVERSION=\"1.636\" -DXS_VERSION=\"1.636\"  "-I/System/Library/Perl/5.18/darwin-thread-multi-2level/CORE"  -W -Wall -Wpointer-arith -Wbad-function-cast -Wno-comment -Wno-sign-compare -Wno-cast-qual -Wmissing-noreturn -Wno-unused-parameter DBI.c
+Running Mkbootstrap for DBI ()
+chmod 644 DBI.bs
+rm -f blib/arch/auto/DBI/DBI.bundle
+cc -mmacosx-version-min=10.12.5  -arch x86_64 -arch i386 -bundle -undefined dynamic_lookup -fstack-protector DBI.o  -o blib/arch/auto/DBI/DBI.bundle 	\
+	     	\
+	  
+chmod 755 blib/arch/auto/DBI/DBI.bundle
+cp DBI.bs blib/arch/auto/DBI/DBI.bs
+chmod 644 blib/arch/auto/DBI/DBI.bs
+/usr/bin/perl "-Iblib/arch" "-Iblib/lib" dbilogstrip.PL dbilogstrip
+Extracted dbilogstrip from dbilogstrip.PL with variable substitutions.
+cp dbilogstrip blib/script/dbilogstrip
+/usr/bin/perl -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/dbilogstrip
+/usr/bin/perl "-Iblib/arch" "-Iblib/lib" dbiproxy.PL dbiproxy
+Extracted dbiproxy from dbiproxy.PL with variable substitutions.
+cp dbiproxy blib/script/dbiproxy
+/usr/bin/perl -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/dbiproxy
+/usr/bin/perl "-Iblib/arch" "-Iblib/lib" dbiprof.PL dbiprof
+Extracted dbiprof from dbiprof.PL with variable substitutions.
+cp dbiprof blib/script/dbiprof
+/usr/bin/perl -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/dbiprof
+Manifying blib/man1/dbiproxy.1
+Manifying blib/man1/dbiprof.1
+Manifying blib/man1/dbilogstrip.1
+Manifying blib/man3/DBI::SQL::Nano.3pm
+Manifying blib/man3/DBI::Const::GetInfoReturn.3pm
+Manifying blib/man3/DBD::Gofer::Transport::stream.3pm
+Manifying blib/man3/DBD::Gofer::Transport::pipeone.3pm
+Manifying blib/man3/DBI::Gofer::Serializer::Storable.3pm
+Manifying blib/man3/Win32::DBIODBC.3pm
+Manifying blib/man3/DBI::Gofer::Response.3pm
+Manifying blib/man3/DBD::Sponge.3pm
+Manifying blib/man3/DBI::Util::CacheMemory.3pm
+Manifying blib/man3/DBI::Const::GetInfo::ANSI.3pm
+Manifying blib/man3/DBD::Gofer::Policy::classic.3pm
+Manifying blib/man3/DBD::Gofer::Transport::null.3pm
+Manifying blib/man3/DBD::Gofer.3pm
+Manifying blib/man3/DBD::Gofer::Policy::Base.3pm
+Manifying blib/man3/DBI::W32ODBC.3pm
+Manifying blib/man3/DBD::File.3pm
+Manifying blib/man3/DBI::PurePerl.3pm
+Manifying blib/man3/DBI::Const::GetInfoType.3pm
+Manifying blib/man3/DBI::Gofer::Request.3pm
+Manifying blib/man3/DBD::File::HowTo.3pm
+Manifying blib/man3/DBI::DBD::SqlEngine::Developers.3pm
+Manifying blib/man3/DBD::DBM.3pm
+Manifying blib/man3/DBI.3pm
+Manifying blib/man3/DBI::Gofer::Execute.3pm
+Manifying blib/man3/DBI::Gofer::Transport::Base.3pm
+Manifying blib/man3/DBI::ProfileData.3pm
+Manifying blib/man3/DBI::ProxyServer.3pm
+Manifying blib/man3/DBD::Gofer::Transport::corostream.3pm
+Manifying blib/man3/DBI::DBD::Metadata.3pm
+Manifying blib/man3/DBI::Profile.3pm
+Manifying blib/man3/DBI::Gofer::Serializer::Base.3pm
+Manifying blib/man3/DBD::Gofer::Policy::rush.3pm
+Manifying blib/man3/DBD::Proxy.3pm
+Manifying blib/man3/DBD::File::Developers.3pm
+Manifying blib/man3/Bundle::DBI.3pm
+Manifying blib/man3/DBD::Gofer::Transport::Base.3pm
+Manifying blib/man3/DBI::DBD::SqlEngine::HowTo.3pm
+Manifying blib/man3/DBI::Gofer::Transport::stream.3pm
+Manifying blib/man3/DBI::Gofer::Transport::pipeone.3pm
+Manifying blib/man3/DBI::ProfileDumper.3pm
+Manifying blib/man3/DBD::Gofer::Policy::pedantic.3pm
+Manifying blib/man3/DBI::Const::GetInfo::ODBC.3pm
+Manifying blib/man3/DBD::File::Roadmap.3pm
+Manifying blib/man3/DBI::ProfileDumper::Apache.3pm
+Manifying blib/man3/DBI::DBD::SqlEngine.3pm
+Manifying blib/man3/DBI::ProfileSubs.3pm
+Manifying blib/man3/DBI::DBD.3pm
+Manifying blib/man3/DBI::Gofer::Serializer::DataDumper.3pm
+  TIMB/DBI-1.636.tar.gz
+  /usr/bin/make -- OK
+'YAML' not installed, will not store persistent state
+Running make test
+PERL_DL_NONLAZY=1 /usr/bin/perl "-MExtUtils::Command::MM" "-e" "test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01basics.t .................... ok
+t/02dbidrv.t .................... ok
+t/03handle.t .................... ok
+t/04mods.t ...................... ok
+t/05concathash.t ................ ok
+t/06attrs.t ..................... ok
+t/07kids.t ...................... ok
+t/08keeperr.t ................... ok
+t/09trace.t ..................... ok
+t/10examp.t ..................... ok
+t/11fetch.t ..................... ok
+t/12quote.t ..................... ok
+t/13taint.t ..................... ok
+t/14utf8.t ...................... ok
+t/15array.t ..................... ok
+t/16destroy.t ................... ok
+t/19fhtrace.t ................... ok
+t/20meta.t ...................... ok
+t/30subclass.t .................. ok
+t/31methcache.t ................. ok
+t/35thrclone.t .................. ok
+t/40profile.t ................... ok
+t/41prof_dump.t ................. ok
+t/42prof_data.t ................. ok
+t/43prof_env.t .................. ok
+t/48dbi_dbd_sqlengine.t ......... ok
+t/49dbd_file.t .................. ok
+t/50dbm_simple.t ................ ok
+t/51dbm_file.t .................. ok
+t/52dbm_complex.t ............... skipped: DBI::SQL::Nano is being used
+t/53sqlengine_adv.t ............. ok
+t/60preparse.t .................. ok
+t/65transact.t .................. ok
+t/70callbacks.t ................. ok
+t/72childhandles.t .............. ok
+t/73cachedkids.t ................ ok
+t/80proxy.t ..................... skipped: modules required for proxy are probably not installed (e.g., RPC/PlClient.pm)
+t/85gofer.t ..................... ok
+t/86gofer_fail.t ................ ok
+t/87gofer_cache.t ............... ok
+t/90sql_type_cast.t ............. ok
+t/91_store_warning.t ............ ok
+t/pod-coverage.t ................ skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ......................... ok
+t/zvg_01basics.t ................ ok
+t/zvg_02dbidrv.t ................ ok
+t/zvg_03handle.t ................ ok
+t/zvg_04mods.t .................. ok
+t/zvg_05concathash.t ............ ok
+t/zvg_06attrs.t ................. ok
+t/zvg_07kids.t .................. ok
+t/zvg_08keeperr.t ............... ok
+t/zvg_09trace.t ................. ok
+t/zvg_10examp.t ................. ok
+t/zvg_11fetch.t ................. ok
+t/zvg_12quote.t ................. ok
+t/zvg_13taint.t ................. skipped: Taint attribute tests not functional with DBI_AUTOPROXY
+t/zvg_14utf8.t .................. ok
+t/zvg_15array.t ................. ok
+t/zvg_16destroy.t ............... ok
+t/zvg_19fhtrace.t ............... ok
+t/zvg_20meta.t .................. ok
+t/zvg_30subclass.t .............. ok
+t/zvg_31methcache.t ............. ok
+t/zvg_35thrclone.t .............. ok
+t/zvg_40profile.t ............... ok
+t/zvg_41prof_dump.t ............. ok
+t/zvg_42prof_data.t ............. ok
+t/zvg_43prof_env.t .............. ok
+t/zvg_48dbi_dbd_sqlengine.t ..... ok
+t/zvg_49dbd_file.t .............. ok
+t/zvg_50dbm_simple.t ............ ok
+t/zvg_51dbm_file.t .............. ok
+t/zvg_52dbm_complex.t ........... skipped: DBI::SQL::Nano is being used
+t/zvg_53sqlengine_adv.t ......... skipped: Modifying driver state won't compute running behind Gofer
+t/zvg_60preparse.t .............. ok
+t/zvg_65transact.t .............. skipped: Transactions not supported by DBD::Gofer
+t/zvg_70callbacks.t ............. ok
+t/zvg_72childhandles.t .......... ok
+t/zvg_73cachedkids.t ............ ok
+t/zvg_80proxy.t ................. skipped: modules required for proxy are probably not installed (e.g., RPC/PlClient.pm)
+t/zvg_85gofer.t ................. ok
+t/zvg_86gofer_fail.t ............ skipped: Gofer DBI_AUTOPROXY
+t/zvg_87gofer_cache.t ........... skipped: Gofer DBI_AUTOPROXY
+t/zvg_90sql_type_cast.t ......... ok
+t/zvg_91_store_warning.t ........ ok
+t/zvn_48dbi_dbd_sqlengine.t ..... ok
+t/zvn_49dbd_file.t .............. ok
+t/zvn_50dbm_simple.t ............ ok
+t/zvn_51dbm_file.t .............. ok
+t/zvn_52dbm_complex.t ........... skipped: DBI::SQL::Nano is being used
+t/zvn_85gofer.t ................. ok
+t/zvp_01basics.t ................ ok
+t/zvp_02dbidrv.t ................ ok
+t/zvp_03handle.t ................ ok
+t/zvp_04mods.t .................. ok
+t/zvp_05concathash.t ............ ok
+t/zvp_06attrs.t ................. ok
+t/zvp_07kids.t .................. skipped: $h->{Kids} attribute not supported for DBI::PurePerl
+t/zvp_08keeperr.t ............... ok
+t/zvp_09trace.t ................. ok
+t/zvp_10examp.t ................. ok
+t/zvp_11fetch.t ................. ok
+t/zvp_12quote.t ................. ok
+t/zvp_13taint.t ................. skipped: Taint attributes not supported with DBI::PurePerl
+t/zvp_14utf8.t .................. ok
+t/zvp_15array.t ................. ok
+t/zvp_16destroy.t ............... ok
+t/zvp_19fhtrace.t ............... ok
+t/zvp_20meta.t .................. ok
+t/zvp_30subclass.t .............. ok
+t/zvp_31methcache.t ............. ok
+t/zvp_35thrclone.t .............. ok
+t/zvp_40profile.t ............... skipped: profiling not supported for DBI::PurePerl
+t/zvp_41prof_dump.t ............. skipped: profiling not supported for DBI::PurePerl
+t/zvp_42prof_data.t ............. skipped: profiling not supported for DBI::PurePerl
+t/zvp_43prof_env.t .............. skipped: profiling not supported for DBI::PurePerl
+t/zvp_48dbi_dbd_sqlengine.t ..... ok
+t/zvp_49dbd_file.t .............. ok
+t/zvp_50dbm_simple.t ............ ok
+t/zvp_51dbm_file.t .............. ok
+t/zvp_52dbm_complex.t ........... skipped: DBI::SQL::Nano is being used
+t/zvp_53sqlengine_adv.t ......... ok
+t/zvp_60preparse.t .............. skipped: preparse not supported for DBI::PurePerl
+t/zvp_65transact.t .............. ok
+t/zvp_70callbacks.t ............. skipped: $h->{Callbacks} attribute not supported for DBI::PurePerl
+t/zvp_72childhandles.t .......... ok
+t/zvp_73cachedkids.t ............ ok
+t/zvp_80proxy.t ................. skipped: modules required for proxy are probably not installed (e.g., RPC/PlClient.pm)
+t/zvp_85gofer.t ................. ok
+t/zvp_86gofer_fail.t ............ skipped: requires Callbacks which are not supported with PurePerl
+t/zvp_87gofer_cache.t ........... ok
+t/zvp_90sql_type_cast.t ......... ok
+t/zvp_91_store_warning.t ........ ok
+t/zvxgn_48dbi_dbd_sqlengine.t ... ok
+t/zvxgn_49dbd_file.t ............ ok
+t/zvxgn_50dbm_simple.t .......... ok
+t/zvxgn_51dbm_file.t ............ ok
+t/zvxgn_52dbm_complex.t ......... skipped: DBI::SQL::Nano is being used
+t/zvxgn_85gofer.t ............... ok
+t/zvxgnp_48dbi_dbd_sqlengine.t .. ok
+t/zvxgnp_49dbd_file.t ........... ok
+t/zvxgnp_50dbm_simple.t ......... ok
+t/zvxgnp_51dbm_file.t ........... ok
+t/zvxgnp_52dbm_complex.t ........ skipped: DBI::SQL::Nano is being used
+t/zvxgnp_85gofer.t .............. ok
+t/zvxgp_01basics.t .............. ok
+t/zvxgp_02dbidrv.t .............. ok
+t/zvxgp_03handle.t .............. ok
+t/zvxgp_04mods.t ................ ok
+t/zvxgp_05concathash.t .......... ok
+t/zvxgp_06attrs.t ............... ok
+t/zvxgp_07kids.t ................ skipped: $h->{Kids} attribute not supported for DBI::PurePerl
+t/zvxgp_08keeperr.t ............. ok
+t/zvxgp_09trace.t ............... ok
+t/zvxgp_10examp.t ............... ok
+t/zvxgp_11fetch.t ............... ok
+t/zvxgp_12quote.t ............... ok
+t/zvxgp_13taint.t ............... skipped: Taint attributes not supported with DBI::PurePerl
+t/zvxgp_14utf8.t ................ ok
+t/zvxgp_15array.t ............... ok
+t/zvxgp_16destroy.t ............. ok
+t/zvxgp_19fhtrace.t ............. ok
+t/zvxgp_20meta.t ................ ok
+t/zvxgp_30subclass.t ............ ok
+t/zvxgp_31methcache.t ........... ok
+t/zvxgp_35thrclone.t ............ ok
+t/zvxgp_40profile.t ............. skipped: profiling not supported for DBI::PurePerl
+t/zvxgp_41prof_dump.t ........... skipped: profiling not supported for DBI::PurePerl
+t/zvxgp_42prof_data.t ........... skipped: profiling not supported for DBI::PurePerl
+t/zvxgp_43prof_env.t ............ skipped: profiling not supported for DBI::PurePerl
+t/zvxgp_48dbi_dbd_sqlengine.t ... ok
+t/zvxgp_49dbd_file.t ............ ok
+t/zvxgp_50dbm_simple.t .......... ok
+t/zvxgp_51dbm_file.t ............ ok
+t/zvxgp_52dbm_complex.t ......... skipped: DBI::SQL::Nano is being used
+t/zvxgp_53sqlengine_adv.t ....... skipped: Modifying driver state won't compute running behind Gofer
+t/zvxgp_60preparse.t ............ skipped: preparse not supported for DBI::PurePerl
+t/zvxgp_65transact.t ............ skipped: Transactions not supported by DBD::Gofer
+t/zvxgp_70callbacks.t ........... skipped: $h->{Callbacks} attribute not supported for DBI::PurePerl
+t/zvxgp_72childhandles.t ........ ok
+t/zvxgp_73cachedkids.t .......... ok
+t/zvxgp_80proxy.t ............... skipped: modules required for proxy are probably not installed (e.g., RPC/PlClient.pm)
+t/zvxgp_85gofer.t ............... ok
+t/zvxgp_86gofer_fail.t .......... skipped: requires Callbacks which are not supported with PurePerl
+t/zvxgp_87gofer_cache.t ......... skipped: Gofer DBI_AUTOPROXY
+t/zvxgp_90sql_type_cast.t ....... ok
+t/zvxgp_91_store_warning.t ...... ok
+t/zvxnp_48dbi_dbd_sqlengine.t ... ok
+t/zvxnp_49dbd_file.t ............ ok
+t/zvxnp_50dbm_simple.t .......... ok
+t/zvxnp_51dbm_file.t ............ ok
+t/zvxnp_52dbm_complex.t ......... skipped: DBI::SQL::Nano is being used
+t/zvxnp_85gofer.t ............... ok
+All tests successful.
+Files=194, Tests=10553, 95 wallclock secs ( 1.71 usr  0.55 sys + 72.80 cusr  9.78 csys = 84.84 CPU)
+Result: PASS
+PERL_DL_NONLAZY=1 /usr/bin/perl "-Iblib/lib" "-Iblib/arch" test.pl
+test.pl 
+DBI test application $Revision$
+Switch: DBI 1.636 by Tim Bunce, 1.636
+Available Drivers: DBM, ExampleP, File, Gofer, Proxy, SQLite, Sponge
+dbi:ExampleP:: testing 3 sets of 20 connections:
+Connecting... 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+Disconnecting...
+Connecting... 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+Disconnecting...
+Connecting... 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+Disconnecting...
+connect 20 and disconnect them, 3 times: 0.0014s / 60 = 0.0000s
+Testing handle creation speed...
+90909 NullP sth/s perl 5.018002 darwin-thread-multi-2level (gcc 4.2.1 -Os) 0.000011s
+
+test.pl done
+  TIMB/DBI-1.636.tar.gz
+  /usr/bin/make test -- OK
+Running make install
+Sorry, try again.
+Manifying blib/man1/dbiproxy.1
+Manifying blib/man1/dbiprof.1
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/dbd_xsh.h
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/DBI.bs
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/DBI.bundle
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/dbi_sql.h
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/dbipport.h
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/dbivport.h
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/DBIXS.h
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/dbixs_rev.h
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/Driver.xst
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/auto/DBI/Driver_xst.h
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/dbixs_rev.pl
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/Bundle/DBI.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/DBM.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/ExampleP.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/File.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/NullP.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Proxy.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Sponge.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/File/Developers.pod
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/File/HowTo.pod
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/File/Roadmap.pod
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer/Policy/Base.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer/Policy/classic.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer/Policy/pedantic.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer/Policy/rush.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer/Transport/Base.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer/Transport/corostream.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer/Transport/null.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer/Transport/pipeone.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBD/Gofer/Transport/stream.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Changes.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/DBD.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Profile.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/ProfileData.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/ProfileDumper.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/ProfileSubs.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/ProxyServer.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/PurePerl.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/W32ODBC.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Const/GetInfoReturn.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Const/GetInfoType.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Const/GetInfo/ANSI.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Const/GetInfo/ODBC.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/DBD/Metadata.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/DBD/SqlEngine.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/DBD/SqlEngine/Developers.pod
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/DBD/SqlEngine/HowTo.pod
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Gofer/Execute.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Gofer/Request.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Gofer/Response.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Gofer/Serializer/Base.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Gofer/Serializer/DataDumper.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Gofer/Serializer/Storable.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Gofer/Transport/Base.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Gofer/Transport/pipeone.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Gofer/Transport/stream.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/ProfileDumper/Apache.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/SQL/Nano.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Util/_accessor.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/DBI/Util/CacheMemory.pm
+Installing /Library/Perl/5.18/darwin-thread-multi-2level/Win32/DBIODBC.pm
+Installing /usr/local/share/man/man1/dbilogstrip.1
+Installing /usr/local/share/man/man1/dbiprof.1
+Installing /usr/local/share/man/man1/dbiproxy.1
+Installing /usr/local/share/man/man3/Bundle::DBI.3pm
+Installing /usr/local/share/man/man3/DBD::DBM.3pm
+Installing /usr/local/share/man/man3/DBD::File.3pm
+Installing /usr/local/share/man/man3/DBD::File::Developers.3pm
+Installing /usr/local/share/man/man3/DBD::File::HowTo.3pm
+Installing /usr/local/share/man/man3/DBD::File::Roadmap.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer::Policy::Base.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer::Policy::classic.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer::Policy::pedantic.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer::Policy::rush.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer::Transport::Base.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer::Transport::corostream.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer::Transport::null.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer::Transport::pipeone.3pm
+Installing /usr/local/share/man/man3/DBD::Gofer::Transport::stream.3pm
+Installing /usr/local/share/man/man3/DBD::Proxy.3pm
+Installing /usr/local/share/man/man3/DBD::Sponge.3pm
+Installing /usr/local/share/man/man3/DBI.3pm
+Installing /usr/local/share/man/man3/DBI::Const::GetInfo::ANSI.3pm
+Installing /usr/local/share/man/man3/DBI::Const::GetInfo::ODBC.3pm
+Installing /usr/local/share/man/man3/DBI::Const::GetInfoReturn.3pm
+Installing /usr/local/share/man/man3/DBI::Const::GetInfoType.3pm
+Installing /usr/local/share/man/man3/DBI::DBD.3pm
+Installing /usr/local/share/man/man3/DBI::DBD::Metadata.3pm
+Installing /usr/local/share/man/man3/DBI::DBD::SqlEngine.3pm
+Installing /usr/local/share/man/man3/DBI::DBD::SqlEngine::Developers.3pm
+Installing /usr/local/share/man/man3/DBI::DBD::SqlEngine::HowTo.3pm
+Installing /usr/local/share/man/man3/DBI::Gofer::Execute.3pm
+Installing /usr/local/share/man/man3/DBI::Gofer::Request.3pm
+Installing /usr/local/share/man/man3/DBI::Gofer::Response.3pm
+Installing /usr/local/share/man/man3/DBI::Gofer::Serializer::Base.3pm
+Installing /usr/local/share/man/man3/DBI::Gofer::Serializer::DataDumper.3pm
+Installing /usr/local/share/man/man3/DBI::Gofer::Serializer::Storable.3pm
+Installing /usr/local/share/man/man3/DBI::Gofer::Transport::Base.3pm
+Installing /usr/local/share/man/man3/DBI::Gofer::Transport::pipeone.3pm
+Installing /usr/local/share/man/man3/DBI::Gofer::Transport::stream.3pm
+Installing /usr/local/share/man/man3/DBI::Profile.3pm
+Installing /usr/local/share/man/man3/DBI::ProfileData.3pm
+Installing /usr/local/share/man/man3/DBI::ProfileDumper.3pm
+Installing /usr/local/share/man/man3/DBI::ProfileDumper::Apache.3pm
+Installing /usr/local/share/man/man3/DBI::ProfileSubs.3pm
+Installing /usr/local/share/man/man3/DBI::ProxyServer.3pm
+Installing /usr/local/share/man/man3/DBI::PurePerl.3pm
+Installing /usr/local/share/man/man3/DBI::SQL::Nano.3pm
+Installing /usr/local/share/man/man3/DBI::Util::CacheMemory.3pm
+Installing /usr/local/share/man/man3/DBI::W32ODBC.3pm
+Installing /usr/local/share/man/man3/Win32::DBIODBC.3pm
+Installing /usr/local/bin/dbilogstrip
+Installing /usr/local/bin/dbiprof
+Installing /usr/local/bin/dbiproxy
+Appending installation info to /Library/Perl/Updates/5.18.2/darwin-thread-multi-2level/perllocal.pod
+  TIMB/DBI-1.636.tar.gz
+  sudo /usr/bin/make install  -- OK
